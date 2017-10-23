@@ -112,6 +112,9 @@
                                     <constraint firstAttribute="width" constant="150" id="uqN-VV-IfU"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWc-Ry-Rcj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -70,7 +70,8 @@ class ViewController: UIViewController {
             } else {
                 print("RL: Sucessfully auth with Firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider":credential.provider]
+                    self.completeSignIn(id: user.uid,userData: userData)
                     
                 }
             }
@@ -85,14 +86,17 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     print("RL:User, \(email) authenticated ")
-                    self.completeSignIn(id: (user?.uid)!)
+                    let userData = ["provider": user?.providerID]
+                    self.completeSignIn(id: (user?.uid)!,userData: userData as! Dictionary<String, String>
+                    )
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: {(user,error) in
                         if error != nil {
                             print("RL:Unable to authenticate in Firebase using email: \(email),error: \(error)")
                         } else {
                             print("RL: Sucessfully authenticated with Firebase")
-                            self.completeSignIn(id: (user?.uid)!)
+                            let userData = ["provider": user?.providerID]
+                            self.completeSignIn(id: (user?.uid)!,userData: userData as! Dictionary<String, String>)
                         }
                     })
                 }
@@ -100,8 +104,9 @@ class ViewController: UIViewController {
         }
     }
  
-    func completeSignIn(id:String) {
-        
+    func completeSignIn(id:String, userData: Dictionary<String,String>) {
+        print("RL:\(id), \(userData)")
+        DataService.ds.createFirebaseUser(uid: id, userdata: userData )
         let keychainResult = KeychainWrapper.standard.set(id, forKey:KEY_UID)
         print("RL: Data saved to keychain for user: \(id), \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)

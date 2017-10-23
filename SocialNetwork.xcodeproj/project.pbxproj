@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E580217E960C5841D6B0FBD /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190519E248DA7615CD97773 /* Pods_SocialNetwork.framework */; };
+		A309B3C21F9E1C16005F6362 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A309B3C11F9E1C16005F6362 /* FeedVC.swift */; };
 		A338ACED1F9D23CC00C352CF /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACEC1F9D23CC00C352CF /* FancyView.swift */; };
 		A338ACF01F9D245700C352CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACEF1F9D245700C352CF /* Constants.swift */; };
 		A338ACF21F9D269A00C352CF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACF11F9D269A00C352CF /* RoundButton.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0A63F6DDCB733BB75500ADA0 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		3190519E248DA7615CD97773 /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A309B3C11F9E1C16005F6362 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		A338ACEC1F9D23CC00C352CF /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		A338ACEF1F9D245700C352CF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A338ACF11F9D269A00C352CF /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				A3CBE9C01F9D06A000FD0BA2 /* ViewController.swift */,
+				A309B3C11F9E1C16005F6362 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -266,6 +270,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -285,6 +290,7 @@
 				A3CBE9C11F9D06A000FD0BA2 /* ViewController.swift in Sources */,
 				A338ACF21F9D269A00C352CF /* RoundButton.swift in Sources */,
 				A338ACF61F9D34A500C352CF /* FancyButton.swift in Sources */,
+				A309B3C21F9E1C16005F6362 /* FeedVC.swift in Sources */,
 				A3CBE9BF1F9D06A000FD0BA2 /* AppDelegate.swift in Sources */,
 				A338ACED1F9D23CC00C352CF /* FancyView.swift in Sources */,
 				A338ACF01F9D245700C352CF /* Constants.swift in Sources */,

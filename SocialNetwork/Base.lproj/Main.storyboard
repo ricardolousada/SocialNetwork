@@ -89,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="33" width="272" height="25"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGW-7m-oDa" customClass="FancyButton" customModule="SocialNetwork" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="272" height="37"/>
@@ -98,6 +98,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlL-9M-ee8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -140,6 +143,10 @@
                             <constraint firstItem="ViF-o0-Wg6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wFB-7g-byR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Sga-jQ-OKg" id="wh0-uX-gNa"/>
+                        <outlet property="passwordField" destination="ia8-0h-1NM" id="cpU-rq-KXL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

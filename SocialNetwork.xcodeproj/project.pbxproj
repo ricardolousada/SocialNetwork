@@ -10,6 +10,7 @@
 		0E580217E960C5841D6B0FBD /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190519E248DA7615CD97773 /* Pods_SocialNetwork.framework */; };
 		A309B3C21F9E1C16005F6362 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A309B3C11F9E1C16005F6362 /* FeedVC.swift */; };
 		A309B3C41F9E651B005F6362 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A309B3C31F9E651B005F6362 /* CircleView.swift */; };
+		A309B3C61F9E75E3005F6362 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A309B3C51F9E75E3005F6362 /* PostCell.swift */; };
 		A338ACED1F9D23CC00C352CF /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACEC1F9D23CC00C352CF /* FancyView.swift */; };
 		A338ACF01F9D245700C352CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACEF1F9D245700C352CF /* Constants.swift */; };
 		A338ACF21F9D269A00C352CF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338ACF11F9D269A00C352CF /* RoundButton.swift */; };
@@ -28,6 +29,7 @@
 		3190519E248DA7615CD97773 /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A309B3C11F9E1C16005F6362 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		A309B3C31F9E651B005F6362 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		A309B3C51F9E75E3005F6362 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		A338ACEC1F9D23CC00C352CF /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		A338ACEF1F9D245700C352CF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A338ACF11F9D269A00C352CF /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				A338ACF31F9D337900C352CF /* FancyField.swift */,
 				A338ACF51F9D34A500C352CF /* FancyButton.swift */,
 				A309B3C31F9E651B005F6362 /* CircleView.swift */,
+				A309B3C51F9E75E3005F6362 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				A3CBE9BF1F9D06A000FD0BA2 /* AppDelegate.swift in Sources */,
 				A338ACED1F9D23CC00C352CF /* FancyView.swift in Sources */,
 				A338ACF01F9D245700C352CF /* Constants.swift in Sources */,
+				A309B3C61F9E75E3005F6362 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

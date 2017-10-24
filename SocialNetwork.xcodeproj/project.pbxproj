@@ -23,6 +23,7 @@
 		A3CBE9C61F9D06A000FD0BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CBE9C51F9D06A000FD0BA2 /* Assets.xcassets */; };
 		A3CBE9C91F9D06A000FD0BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CBE9C71F9D06A000FD0BA2 /* LaunchScreen.storyboard */; };
 		A3CBE9D11F9D083200FD0BA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3CBE9D01F9D083200FD0BA2 /* GoogleService-Info.plist */; };
+		A3F6C31D1F9F386200BC194E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6C31C1F9F386200BC194E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		A3CBE9C81F9D06A000FD0BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CBE9CA1F9D06A000FD0BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3CBE9D01F9D083200FD0BA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3F6C31C1F9F386200BC194E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C77F541FEED3DFAF0857D217 /* Pods-SocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		A338ACE81F9D0A6800C352CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3F6C31C1F9F386200BC194E /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				A309B3C41F9E651B005F6362 /* CircleView.swift in Sources */,
 				A338ACF41F9D337900C352CF /* FancyField.swift in Sources */,
 				A3CBE9C11F9D06A000FD0BA2 /* ViewController.swift in Sources */,
+				A3F6C31D1F9F386200BC194E /* Post.swift in Sources */,
 				A338ACF21F9D269A00C352CF /* RoundButton.swift in Sources */,
 				A338ACF61F9D34A500C352CF /* FancyButton.swift in Sources */,
 				A309B3C91F9E87C7005F6362 /* DataServices.swift in Sources */,

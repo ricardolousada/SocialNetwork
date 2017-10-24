@@ -15,11 +15,33 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            
+            self.posts=[]
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                print("RL: estes são os posts existentes: \(snapshot)")
+                
+                for snap in snapshot {
+                    print("RL: SNAP: \(snap)")
+                    if let postDict = snap.value as? Dictionary<String,AnyObject> {
+                        let key = snap.key
+                        let post = Post(postKey: key, postData: postDict)
+                        self.posts.append(post)
+                    }
+                    
+                }
+                
+            }
+            self.tableView.reloadData()
+        })
         
         
     }
@@ -31,17 +53,24 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
-        return 3
+        
+            return posts.count
             
         }
         
         
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-            return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        
+        let post = posts[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+            
+        } else {
+            return PostCell()
         }
-        
+    }
+    
 
     @IBAction func singOutPressed(_ sender: Any) {
         
